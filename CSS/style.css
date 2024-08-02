@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+/* CSS reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/*Navigation Bar: Logo and Image  */
+#logo{
+    margin: 9px;
+    /* border: 2px solid red; */
+    
+}
+
+#logo img{
+    height: 56px;
+    margin: 2px 6px;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Navigation Bar: List Styling */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar ul li{
+    display: flex;
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 479px;
+}
+#home::before{
+    content: "";
+    background: url('../spaghetti-1932466_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 562px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+/* services section  */
+#services{
+    margin: 25px 13px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 15px 20px;
+    margin: 0 8px;
+    border-radius: 28px;
+    background-color: #f1f1f1;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+/* clients section  */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../salad-2756467_1280.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 98px;
+}
+
+/* Contact section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: url('../contact-us-4193523_1280.jpg') no-repeat center center/cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+/* footer  */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 0 12px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
+
